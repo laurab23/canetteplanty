@@ -7,3 +7,22 @@ Template:   kadence
 Version:    1.0
 License:    GNU General Public License v2 or later
 */
+
+.rencontrerform {
+    font-weight: 700;
+    text-align: center;
+}
+
+/*  buttons 2 pages*/
+.envoyerbtn {
+    padding-left: 55px !important;
+    display: flex !important;
+    justify-content: center !important;
+    background-color: #DC9F96 !important;
+}
+
+#menu-item-48 {
+    background-color: #DC9F96 !important;
+    font-weight: 700;
+    font-style: #FFFFFFFF;
+}
