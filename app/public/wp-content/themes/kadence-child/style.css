@@ -8,21 +8,139 @@ Version:    1.0
 License:    GNU General Public License v2 or later
 */
 
+/*menu*/
+header .site-container {
+    padding-right: 0 !important;
+}
+
+.admin {
+    text-decoration: none;
+    padding: 0 48px;
+    color: black;
+}
+
+#menu-item-48 a {
+    background-color: #DC9F96 !important;
+    height: 55px;
+    padding: 0px 20px;
+    font-weight: 700;
+    color: #FFFFFFFF;
+    box-sizing: content-box;
+}
+
+#primary-menu :nth-child(1) {
+    order: 1;
+}
+
+#primary-menu :nth-child(2) {
+    order: 3;
+}
+
+#primary-menu :nth-child(3) {
+    order: 2;
+}
+
+/* form  ns rencontrer*/
 .rencontrerform {
     font-weight: 700;
     text-align: center;
 }
 
-/*  buttons 2 pages*/
-.envoyerbtn {
-    padding-left: 55px !important;
-    display: flex !important;
-    justify-content: center !important;
-    background-color: #DC9F96 !important;
+/*form page commande*/
+.deuxcolonnes {
+    display: flex;
+    flex-direction: row;
+    column-gap: 69px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#menu-item-48 {
-    background-color: #DC9F96 !important;
+.colonnes1, .colonnes2 {
+    width: 383px;
+}
+
+.deuxcolonnes h2 {
+    font-family: 'Syne';
+    font-style: normal;
     font-weight: 700;
-    font-style: #FFFFFFFF;
+    font-size: 30px;
+    line-height: 36px;
+    color: white;
+}
+
+.deuxcolonnes label {
+    color: #FFFFFF;
+}
+
+input[type=submit] {
+    text-transform: none;
+}
+
+.border {
+    border-right: 1px solid #FFFFFF;
+}
+
+.has-spinner, .wpcf7-submit {
+    background-color: #DC9F96 !important;
+
+}
+
+.commander {
+    padding-left: 70px !important;
+}
+
+/*  buttons */
+
+.commander {
+    display: flex;
+    : ;
+    justify-content: center;
+    padding-top: 30px;
+    height: 75px;
+}
+
+/*responsive form commandes*/
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+    .deuxcolonnes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+
+}
+
+@media all and (min-width: 700px) and (max-width: 1024px) {
+    .deuxcolonnes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .commander {
+        padding-left: 50px !important;
+    }
+
+    .images {
+        display flex: none !important;
+
+
+        width: 170px !important;
+        height: 130px !important;
+        margin: 10px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 426px) {
+
+
+    .deuxcolonnes {
+        display: flex;
+        justify-content: center !important;
+        flex-direction: column;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+
 }
